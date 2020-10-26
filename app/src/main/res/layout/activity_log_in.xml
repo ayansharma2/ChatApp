@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Log_in">
+<com.google.android.material.appbar.AppBarLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:background="@android:color/transparent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Noicee"
+            android:textStyle="bold"
+            android:textSize="20sp"/>
+    </androidx.appcompat.widget.Toolbar>
+</com.google.android.material.appbar.AppBarLayout>
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:orientation="vertical"
+       android:padding="25dp"
+       android:gravity="center"
+       android:layout_height="wrap_content">
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Log in"
+           android:textSize="40dp"
+           android:textStyle="bold" />
+
+       <View
+           android:id="@+id/divider2"
+           android:layout_width="match_parent"
+           android:layout_height="2dp"
+           android:layout_marginTop="50dp"
+           android:layout_marginBottom="50dp"
+           android:background="?android:attr/listDivider" />
+
+       <EditText
+           android:id="@+id/email"
+           android:background="@drawable/login_background"
+           android:hint="E-mail"
+           android:drawableLeft="@drawable/ic_at"
+           android:padding="9dp"
+           android:drawablePadding="5dp"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"/>
+       <EditText
+           android:layout_width="match_parent"
+           android:background="@drawable/login_background"
+           android:drawableLeft="@drawable/ic_key"
+           android:inputType="textPassword"
+           android:hint="Password"
+           android:padding="9dp"
+           android:drawablePadding="5dp"
+           android:layout_marginTop="10dp"
+           android:id="@+id/password"
+           android:layout_height="wrap_content"/>
+       <ImageButton
+           android:layout_width="wrap_content"
+           android:id="@+id/login"
+           android:src="@drawable/ic_enter"
+           android:onClick="log_in"
+           android:layout_marginTop="10dp"
+           android:layout_height="wrap_content"/>
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_marginTop="6dp"
+           android:text="Don't have account Sign in"
+           android:onClick="newIntent"
+           android:layout_height="wrap_content"/>
+   </LinearLayout>
+</LinearLayout>

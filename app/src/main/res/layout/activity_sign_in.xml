@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Sign_in">
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Noicee"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"/>
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:orientation="vertical"
+       android:gravity="center"
+       android:padding="25dp"
+       android:layout_height="wrap_content">
+       <TextView
+           android:layout_width="wrap_content"
+           android:text="Sign In"
+           android:layout_marginBottom="50dp"
+           android:textSize="40sp"
+           android:textStyle="bold"
+           android:padding="10dp"
+           android:layout_height="wrap_content"/>
+
+       <View
+           android:id="@+id/divider"
+           android:layout_width="match_parent"
+           android:layout_height="2dp"
+           android:layout_marginBottom="50dp"
+           android:outlineAmbientShadowColor="@color/colorPrimaryDark"
+           android:background="?android:attr/listDivider" />
+
+       <EditText
+           android:id="@+id/name"
+           android:hint="Name"
+           android:padding="5dp"
+           android:paddingStart="9dp"
+           android:drawableLeft="@drawable/ic_user"
+           android:drawablePadding="5dp"
+           android:background="@drawable/login_background"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content" />
+
+       <EditText
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:hint="E-mail"
+           android:drawableLeft="@drawable/ic_at"
+           android:padding="5dp"
+           android:paddingStart="9dp"
+           android:drawablePadding="5dp"
+           android:layout_marginTop="6dp"
+           android:background="@drawable/login_background"
+           android:id="@+id/email"/>
+       <EditText
+           android:inputType="textPassword"
+           android:hint="Password"
+           android:padding="5dp"
+           android:paddingStart="9dp"
+           android:drawableLeft="@drawable/ic_key"
+           android:background="@drawable/login_background"
+           android:layout_marginTop="6dp"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:id="@+id/password"/>
+       <ImageButton
+           android:layout_marginTop="19dp"
+           android:id="@+id/register"
+           android:layout_width="wrap_content"
+           android:onClick="register"
+           android:src="@drawable/ic_enter"
+           android:layout_height="wrap_content"/>
+
+
+   </LinearLayout>
+
+
+</LinearLayout>
